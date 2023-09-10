@@ -1,4 +1,4 @@
-if ActiveSupport.gem_version < "7.1.0.alpha"
+if ActiveSupport::VERSION::STRING < "7.1.0.alpha"
   if defined?(ActiveModel)
     ActiveModel::Model.send :include, NameOfPerson::HasPersonName
   end
